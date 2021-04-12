@@ -10,17 +10,54 @@ body <- dashboardBody(tabItems(
           fluidPage(
             title = "Business Context",
             mainPanel(
-              textInput(inputId ='text_business_context',
-                        label = "Business Context"),
-              br(),
-              textInput(inputId ='text_business_background',
-                        label = "Background"),
-              br(),
-              textInput(inputId ='text_business_data',
-                        label = "Data"),
-              br(),
-              textInput(inputId ='text_business_expectation',
-                        label = "Expectation")
+              
+              
+              shinyWidgets::panel(heading = 'Business Context',
+                                  status = 'primary',
+                                  
+                                  tabsetPanel(
+                                    tabPanel(
+                                      title = h5('Business Understanding'),
+                                      textAreaInput(
+                                        width = '950px',
+                                        height = '250px',
+                                        inputId = 'main_description',
+                                        label = '',
+                                        value = 'Customer churn analysis refers to the customer attrition rate in a company. Churn rate (sometimes called attrition rate), in its broadest sense, is a measure of the number of individuals or items moving out of a collective group over a specific period.'
+                                      )
+                                    ),
+                                    tabPanel(
+                                      title = h5('Background'),
+                                      textAreaInput(
+                                        width = '950px',
+                                        height = '250px',
+                                        inputId = 'main_description',
+                                        label = '',
+                                        value = ''
+                                      )
+                                      ),
+                                      tabPanel(
+                                        title = h5('Data Understanding'),
+                                        textAreaInput(
+                                          width = '950px',
+                                          height = '250px',
+                                          inputId = 'main_description',
+                                          label = '',
+                                          value = ''
+                                        )
+                                      ),
+                                      tabPanel(
+                                        title = h5('Expectation'),
+                                        textAreaInput(
+                                          width = '950px',
+                                          height = '250px',
+                                          inputId = 'main_description',
+                                          label = '',
+                                          value = ''                                        )
+                                      )
+                                    
+                                    
+                                  ))
             )
           )),
   
@@ -31,28 +68,27 @@ body <- dashboardBody(tabItems(
   # Data Selection Tab ----
   
   
-  tabItem(tabName = "tab_data_selection",
-          fluidPage(
-            sidebarLayout(
-              sidebarPanel(
-                width = 3,
-                h1("Explore a Dataset"),
-                
-                shiny::selectInput(
-                  inputId = "dataset_choice",
-                  label   = "Data Connection",
-                  choices = c("Telco Data","StackOverflow", "Car Prices", "Sacramento Housing")
-                ),
-                
-                hr()
- 
-              ),
-              
-           
-              mainPanel(dataTableOutput("show_data"))
-            )
-          )),
-  
+  tabItem(
+    tabName = "tab_data_selection",
+    fluidPage(
+      shinyWidgets::panel(
+        heading = 'Explore a Dataset',
+        status = 'primary',
+        
+        tabsetPanel(
+          tabPanel(
+            title = h5("Data Connection"),
+            shiny::selectInput(
+              inputId = "dataset_choice",
+              label   = " ",
+              choices = c("Telco Data")
+            ),
+          ),
+          tabPanel(title = h5("View Data"),
+                   dataTableOutput("show_data")
+          )) 
+      ))),
+      
  
   # Correlation Tab ----
   
