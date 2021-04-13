@@ -1,0 +1,47 @@
+/* Font from Google Fonts */
+  @import url('https://fonts.googleapis.com/css2?family=Yusei+Magic&display=swap');
+
+body {
+  background-color: blue;
+  color: white; /* text color */
+}
+
+/* Change header text to imported font */
+  h2 {
+    font-family: 'Yusei Magic', sans-serif;
+  }
+
+/* Make text visible on inputs */
+  .shiny-input-container {
+    color: #474747;
+  }
+  
+  
+  /* logo */
+.skin-blue .main-header .logo {
+  position: fixed; 
+  overflow: visible;
+}
+
+/* navbar (rest of the header) */
+.skin-blue .main-header .navbar {
+  position: fixed; 
+  overflow: visible;
+}        
+
+/* main sidebar */
+.skin-blue .main-sidebar {
+  position: fixed; 
+  overflow: visible;
+}
+
+/* Remove sidebar toggle */ 
+
+.sidebar-toggle {
+  display: none;
+}
+
+.main-header .logo{
+  color: white; 
+  font-size: 15px;
+}

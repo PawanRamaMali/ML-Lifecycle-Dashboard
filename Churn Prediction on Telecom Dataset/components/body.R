@@ -1,6 +1,14 @@
 # body.R
 
-body <- dashboardBody(tabItems( 
+body <- dashboardBody(
+  
+  tags$head(
+    tags$link(rel = "stylesheet", 
+              type = "text/css", 
+              href = "dark_mode.css")
+  ),
+  
+  tabItems( 
   # # Dashboard Tab ----
 
   # Correlation Tab ----
@@ -19,8 +27,8 @@ body <- dashboardBody(tabItems(
                                     tabPanel(
                                       title = h5('Business Understanding'),
                                       textAreaInput(
-                                        width = '950px',
-                                        height = '250px',
+                                         width = '950px',
+                                         height = '250px',
                                         inputId = 'main_description',
                                         label = '',
                                         value = 'Customer churn analysis refers to the customer attrition rate in a company. Churn rate (sometimes called attrition rate), in its broadest sense, is a measure of the number of individuals or items moving out of a collective group over a specific period.'
@@ -29,8 +37,8 @@ body <- dashboardBody(tabItems(
                                     tabPanel(
                                       title = h5('Background'),
                                       textAreaInput(
-                                        width = '950px',
-                                        height = '250px',
+                                        # width = '950px',
+                                        # height = '250px',
                                         inputId = 'main_description',
                                         label = '',
                                         value = ''
@@ -39,8 +47,8 @@ body <- dashboardBody(tabItems(
                                       tabPanel(
                                         title = h5('Data Understanding'),
                                         textAreaInput(
-                                          width = '950px',
-                                          height = '250px',
+                                          # width = '950px',
+                                          # height = '250px',
                                           inputId = 'main_description',
                                           label = '',
                                           value = ''
@@ -49,8 +57,8 @@ body <- dashboardBody(tabItems(
                                       tabPanel(
                                         title = h5('Expectation'),
                                         textAreaInput(
-                                          width = '950px',
-                                          height = '250px',
+                                          # width = '950px',
+                                          # height = '250px',
                                           inputId = 'main_description',
                                           label = '',
                                           value = ''                                        )
