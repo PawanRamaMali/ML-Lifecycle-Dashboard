@@ -103,11 +103,17 @@ body <- dashboardBody(
   
   tabItem(tabName = "tab_correlation",
           fluidPage(
-            title = "Correlation Plot",
-            mainPanel(
-              plotlyOutput("corrplot", height = 700)
+            shinyWidgets::panel(
+              heading = 'Correlation Plot',
+              status = 'primary',
+              
+              tabsetPanel(tabPanel(
+                title = h5("Plot"),
+                plotlyOutput("corrplot", height = 700)
+              ))
             )
-          )),
+            
+          )), 
   
   
   
