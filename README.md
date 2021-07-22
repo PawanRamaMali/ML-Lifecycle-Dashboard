@@ -10,5 +10,11 @@ It defines each step that an organization should follow to take advantage of mac
 ### 1. Define Project Objectives:
  The first step of the life cycle is to identify an opportunity to tangibly improve operations, increase customer satisfaction, or otherwise create value.
 
+### 2. Acquire and Explore Data: 
+ The next step is to collect and prepare all of the relevant data for use in machine learning. 
+
+
+
+
 
 ## Currently under development 
