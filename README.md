@@ -16,6 +16,11 @@ It defines each step that an organization should follow to take advantage of mac
 ### 3.Model Data:
  In order to gain insights from your data with machine learning, you must determine your target variable, the factor on which you wish to gain deeper understanding.
 
+### 4. Interpret and Communicate:
+ One of the most difficult tasks of machine learning projects is explaining a model’s outcomes to those without any data science background.
+ Traditionally, machine learning has been thought of as a “black box” because it is difficult to interpret insights and communicate the value of those insights to stakeholders and regulatory bodies.
+ The more interpretable your model, the easier it will be to meet regulatory requirements and communicate its value to management and other key stakeholders.
+
 
 
 ## Currently under development 
