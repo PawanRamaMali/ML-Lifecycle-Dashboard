@@ -50,6 +50,12 @@ It defines each step that an organization should follow to take advantage of mac
 
 ### 2. Acquire and Explore Data: 
  The next step is to collect and prepare all of the relevant data for use in machine learning. 
+ 
+ This step gives more insights into the data and how the data is related to the target variable. This step involves mainly:
+1. Uni-variate analysis
+2. Bi-variate/Multi-variate analysis
+3. Pivots
+4. Visualization and Data Insights
 
 ### 3.Model Data:
  In order to gain insights from your data with machine learning, you must determine your target variable, the factor on which you wish to gain deeper understanding.
